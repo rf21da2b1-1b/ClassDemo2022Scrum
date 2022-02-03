@@ -1,0 +1,17 @@
+﻿@page
+@model ClassDemo2022Scrum.Pages.UserStories.IndexModel
+@{
+}
+<h1 class="jumbotron-fluid">UserStories</h1>
+
+<ul>
+    @foreach (var us in @Model.UserStories)
+    {
+    <li>
+        <div>(@us.Id) @us.Title</div>
+        <div>@us.Description</div>
+        <div>@us.StoryPoint, @us.BusinessValue</div>
+    </li>
+    }
+</ul>
+
